@@ -4,12 +4,13 @@
     "name": "Team Liquid",
     "region": "North America",
     "ranking": 3,
+    "logo_url": "https://placehold.co/100x100/ADD8E6/000000?text=TL",
     "roster": [
       {
         "id": "p1",
         "name": "EliGE",
         "role": "Rifler",
-        "imageUrl": "https://example.com/elige.jpg",
+        "imageUrl": "https://images.unsplash.com/photo-1596708778469-87a151528657?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "stats": {
           "kills": 100,
           "deaths": 80,
