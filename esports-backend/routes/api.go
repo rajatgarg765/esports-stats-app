@@ -1,3 +1,5 @@
+// esports-backend/routes/api.go (Ensure it includes Match routes)
+
 package routes
 
 import (
@@ -9,7 +11,6 @@ import (
 
 // SetupAPIRoutes configures all API endpoints
 func SetupAPIRoutes(router *gin.Engine, db *gorm.DB) {
-	// Middleware to inject DB into context
 	router.Use(func(c *gin.Context) {
 		c.Set("db", db)
 		c.Next()
@@ -18,24 +19,21 @@ func SetupAPIRoutes(router *gin.Engine, db *gorm.DB) {
 	api := router.Group("/api/v1")
 	{
 		// Event Routes
+		api.GET("/events/recent", handlers.GetRecentEvents)
 		api.GET("/events", handlers.GetEvents)
 		api.GET("/events/:id", handlers.GetEventByID)
 
 		// Team Routes
-		api.GET("/teams", handlers.GetTeams)
-		api.GET("/teams/:id", handlers.GetTeamByID)
-		// api.POST("/teams", handlers.CreateTeam)    // Uncomment when you implement CreateTeam
-		// api.PUT("/teams/:id", handlers.UpdateTeam)  // Uncomment when you implement UpdateTeam
-		// api.DELETE("/teams/:id", handlers.DeleteTeam) // Uncomment when you implement DeleteTeam
+		api.GET("/teams/popular", handlers.ListPopularTeams)
+		api.GET("/teams", handlers.ListAllTeams)
+		api.GET("/teams/:id", handlers.FindTeamByID)
 
 		// Player Routes
 		api.GET("/players", handlers.GetPlayers)
 		api.GET("/players/:id", handlers.GetPlayerByID)
-		// api.POST("/players", handlers.CreatePlayer)    // Uncomment when you implement CreatePlayer
-		// api.PUT("/players/:id", handlers.UpdatePlayer)  // Uncomment when you implement UpdatePlayer
-		// api.DELETE("/players/:id", handlers.DeletePlayer) // Uncomment when you implement DeletePlayer
 
-		// Data Ingestion Routes (for manual trigger or testing, production will be scheduled)
-		// api.POST("/ingest/pubg-events", handlers.IngestPUBGEvents)
+		// Match Routes
+		api.GET("/matches", handlers.GetMatches)
+		api.GET("/matches/:id", handlers.GetMatchByID)
 	}
 }

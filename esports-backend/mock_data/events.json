@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "ESL Pro League",
+    "overview": "Top teams compete in ESL Pro League.",
+    "imageUrl": "https://example.com/event1.jpg",
+    "date": "2025-08-10",
+    "endDate": "2025-08-20",
+    "status": "ongoing",
+    "participants": [
+      {
+        "team_id": "1",
+        "team_name": "Team Liquid",
+        "position": 1,
+        "prize_won": 50000
+      },
+      {
+        "team_id": "2",
+        "team_name": "Natus Vincere",
+        "position": 2,
+        "prize_won": 25000
+      }
+    ],
+    "matches": [
+      {
+        "id": "m1",
+        "team1_id": "1",
+        "team2_id": "2",
+        "team1_name": "Team Liquid",
+        "team2_name": "Natus Vincere",
+        "score": "2-1",
+        "status": "completed",
+        "start_time": "2025-08-11T15:00:00Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "m1",
+    "event_id": 1,
+    "team1_id": "1",
+    "team2_id": "2",
+    "team1_name": "Team Liquid",
+    "team2_name": "Natus Vincere",
+    "score": "2-1",
+    "status": "completed",
+    "start_time": "2025-08-11T15:00:00Z"
+  }
+]

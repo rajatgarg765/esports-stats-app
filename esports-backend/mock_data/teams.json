@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "name": "Team Liquid",
+    "region": "North America",
+    "ranking": 3,
+    "roster": [
+      {
+        "id": "p1",
+        "name": "EliGE",
+        "role": "Rifler",
+        "imageUrl": "https://example.com/elige.jpg",
+        "stats": {
+          "kills": 100,
+          "deaths": 80,
+          "assists": 30,
+          "score": 85
+        }
+      }
+    ]
+  }
+]

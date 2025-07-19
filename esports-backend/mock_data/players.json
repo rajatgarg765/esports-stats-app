@@ -1,0 +1,15 @@
+[
+  {
+    "id": "p1",
+    "name": "EliGE",
+    "team_id": "1",
+    "role": "Rifler",
+    "imageUrl": "https://example.com/elige.jpg",
+    "stats": {
+      "kills": 100,
+      "deaths": 80,
+      "assists": 30,
+      "score": 85
+    }
+  }
+]
