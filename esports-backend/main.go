@@ -3,13 +3,15 @@ package main
 import (
 	"log"
 	"os"
+	"time" // Added for time.Hour in CORS
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 
-	"github.com/your-username/esports-backend/config"
-	"github.com/your-username/esports-backend/routes"
+	"github.com/rajatgarg765/esports-backend/config"
+	"github.com/rajatgarg765/esports-backend/routes"
+	"github.com/rajatgarg765/esports-backend/data_ingestion" // Added import
 )
 
 func main() {
@@ -26,6 +28,16 @@ func main() {
 
 	// Migrate database schema (create tables if they don't exist)
 	config.Migrate(db)
+
+	// --- TEMPORARY: Trigger data ingestion on startup for testing ---
+	// REMOVE THIS LINE OR REPLACE WITH A PROPER SCHEDULED JOB IN PRODUCTION!
+	if err := data_ingestion.IngestPUBGEvents(db); err != nil {
+		log.Printf("Initial data ingestion failed: %v", err)
+	} else {
+		log.Println("Initial data ingestion completed successfully.")
+	}
+	// --- END TEMPORARY SECTION ---
+
 
 	router := gin.Default()
 

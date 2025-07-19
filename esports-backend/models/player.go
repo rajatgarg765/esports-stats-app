@@ -5,12 +5,11 @@ import "gorm.io/gorm"
 // Player represents an esports player
 type Player struct {
 	gorm.Model
-	Nickname      string `json:"nickname"`
+	Nickname      string `json:"nickname" gorm:"uniqueIndex:idx_player_nickname_game"` // Composite unique index
 	RealName      string `json:"realName"`
-	Game          string `json:"game"` // e.g., "PUBG Mobile"
+	Game          string `json:"game" gorm:"uniqueIndex:idx_player_nickname_game"` // Part of composite unique index
 	Country       string `json:"country"`
 	PhotoURL      string `json:"photoUrl"`
-	CurrentTeamID uint   `json:"currentTeamId"` // Foreign key to Team
-	CurrentTeam   Team   `gorm:"foreignKey:CurrentTeamID"` // GORM association
-	// Add more fields like: Role, KDA (historical if possible), TotalEarnings
+	CurrentTeamID uint   `json:"currentTeamId"`
+	CurrentTeam   Team   `gorm:"foreignKey:CurrentTeamID"`
 }

@@ -1,66 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/* Import the custom fonts FIRST */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap');
 
+/* Then, your Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Then, your other custom CSS rules */
 body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f3f4f6; /* Light gray background */
-  color: #333;
+  /* Apply the primary background and default text color from your design */
+  font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+  background-color: #111618; /* From design-bg */
+  color: #e2e8f0; /* A default light text color, can be refined */
 }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+/* Ensure dark mode is correctly set up if needed */
+.dark {
+  color-scheme: dark;
 }
 
-/* Basic utility classes for demonstration, consider full Tailwind for production */
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.flex-grow { flex-grow: 1; }
-.justify-between { justify-content: space-between; }
-.items-center { align-items: center; }
-.text-center { text-align: center; }
-.text-lg { font-size: 1.125rem; }
-.text-xl { font-size: 1.25rem; }
-.text-2xl { font-size: 1.5rem; }
-.text-3xl { font-size: 1.875rem; }
-.text-4xl { font-size: 2.25rem; }
-.text-6xl { font-size: 3.75rem; }
-.font-bold { font-weight: 700; }
-.font-semibold { font-weight: 600; }
-.font-medium { font-weight: 500; }
-.mb-1 { margin-bottom: 0.25rem; }
-.mb-2 { margin-bottom: 0.5rem; }
-.mb-4 { margin-bottom: 1rem; }
-.mb-6 { margin-bottom: 1.5rem; }
-.mb-8 { margin-bottom: 2rem; }
-.mt-4 { margin-top: 1rem; }
-.mt-8 { margin-top: 2rem; }
-.p-4 { padding: 1rem; }
-.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
-.rounded-lg { border-radius: 0.5rem; }
-.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-.hover\:shadow-lg:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
-.transition-shadow { transition-property: box-shadow; transition-duration: 0.3s; }
-.duration-300 { transition-duration: 0.3s; }
-.bg-gray-800 { background-color: #1f2937; }
-.bg-white { background-color: #ffffff; }
-.bg-blue-600 { background-color: #2563eb; }
-.hover\:bg-blue-700:hover { background-color: #1d4ed8; }
-.text-white { color: #ffffff; }
-.text-gray-300 { color: #d1d5db; }
-.hover\:text-gray-300:hover { color: #d1d5db; }
-.text-gray-600 { color: #4b5563; }
-.text-gray-700 { color: #374151; }
-.text-gray-800 { color: #1f2937; }
-.text-gray-900 { color: #111827; }
-.text-red-600 { color: #dc2626; }
-.block { display: block; }
-.min-h-screen { min-height: 100vh; }
-.min-h-\[calc\(100vh-16rem\)\] { min-height: calc(100vh - 16rem); } /* Example custom height */
-.space-x-4 > *:not([hidden]) ~ *:not([hidden]) { margin-left: 1rem; }
+/* Add the @container styles directly here from your HTML files */
+/* These were found in homepage.html, events.html, events_Detail.html, team.html, player.html, rankings.html */
+
+/* Styles from homepage.html table (if present in other designs) */
+/* The homepage HTML you provided doesn't have a table with this ID, but keeping it for consistency if it's from other designs */
+@container(max-width:120px){.table-0bfae42e-ce21-479a-a77d-6d81e0346eb2-column-120{display: none;}}
+@container(max-width:240px){.table-0bfae42e-ce21-479a-a77d-6d81e0346eb2-column-240{display: none;}}
+@container(max-width:360px){.table-0bfae42e-ce21-479a-a77d-6d81e0346eb2-column-360{display: none;}}
+
+/* Styles from events_Detail.html table (Final Results) */
+@container(max-width:120px){.table-3d2059d9-e6b3-488f-ac84-c385d83f2837-column-120{display: none;}}
+@container(max-width:240px){.table-3d2059d9-e6b3-488f-ac84-c385d83f2837-column-240{display: none;}}
+@container(max-width:360px){.table-3d2059d9-e6b3-488f-ac84-c385d83f2837-column-360{display: none;}}
+@container(max-width:480px){.table-3d2059d9-e6b3-488f-ac84-c385d83f2837-column-480{display: none;}}
+@container(max-width:600px){.table-3d2059d9-e6b3-488f-ac84-c385d83f2837-column-600{display: none;}}
+
+/* Styles from events_Detail.html table (Match Statistics) */
+@container(max-width:120px){.table-a5563fba-80fb-42ae-9b3e-e48e2b180ff4-column-120{display: none;}}
+@container(max-width:240px){.table-a5563fba-80fb-42ae-9b3e-e48e2b180ff4-column-240{display: none;}}
+@container(max-width:360px){.table-a5563fba-80fb-42ae-9b3e-e48e2b180ff4-column-360{display: none;}}
+@container(max-width:480px){.table-a5563fba-80fb-42ae-9b3e-e48e2b180ff4-column-480{display: none;}}
+
+/* Styles from team.html table */
+@container(max-width:56px){.table-fd4db91d-0c65-44ea-8f12-eeda4568a706-column-56{display: none;}}
+@container(max-width:176px){.table-fd4db91d-0c65-44ea-8f12-eeda4568a706-column-176{display: none;}}
+@container(max-width:296px){.table-fd4db91d-0c65-44ea-8f12-eeda4568a706-column-296{display: none;}}
+@container(max-width:416px){.table-fd4db91d-0c65-44ea-8f12-eeda4568a706-column-416{display: none;}}
+@container(max-width:536px){.table-fd4db91d-0c65-44ea-8f12-eeda4568a706-column-536{display: none;}}
+@container(max-width:656px){.table-fd4db91d-0c65-44ea-8f12-eeda4568a706-column-656{display: none;}}
+
+/* Styles from player.html table (Past Performances - assuming same as team.html tables but with different ID) */
+/* This is likely table-c19dbbd5-38d1-46be-aeb9-045721c8ad00 */
+@container(max-width:120px){.table-c19dbbd5-38d1-46be-aeb9-045721c8ad00-column-120{display: none;}}
+@container(max-width:240px){.table-c19dbbd5-38d1-46be-aeb9-045721c8ad00-column-240{display: none;}}
+@container(max-width:360px){.table-c19dbbd5-38d1-46be-aeb9-045721c8ad00-column-360{display: none;}}
+
+/* Styles from rankings.html table */
+@container(max-width:120px){.table-92f866aa-0100-4568-b288-6e33c5d989ad-column-120{display: none;}}
+@container(max-width:240px){.table-92f866aa-0100-4568-b288-6e33c5d989ad-column-240{display: none;}}
+@container(max-width:360px){.table-92f866aa-0100-4568-b288-6e33c5d989ad-column-360{display: none;}}
+@container(max-width:480px){.table-92f866aa-0100-4568-b288-6e33c5d989ad-column-480{display: none;}}
+@container(max-width:600px){.table-92f866aa-0100-4568-b288-6e33c5d989ad-column-600{display: none;}}
+@container(max-width:720px){.table-92f866aa-0100-4568-b288-6e33c5d989ad-column-720{display: none;}}

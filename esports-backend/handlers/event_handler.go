@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 
-	"github.com/your-username/esports-backend/models"
+	"github.com/rajatgarg765/esports-backend/models"
 )
 
 // GetEvents fetches all events

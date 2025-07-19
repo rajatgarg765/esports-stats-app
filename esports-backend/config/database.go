@@ -9,7 +9,7 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 
-	"github.com/your-username/esports-backend/models" // Adjust this path
+	"github.com/rajatgarg765/esports-backend/models" // Adjust this path
 )
 
 var DB *gorm.DB
