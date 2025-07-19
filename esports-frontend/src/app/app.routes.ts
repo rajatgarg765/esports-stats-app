@@ -16,5 +16,13 @@ export const routes: Routes = [
   {
     path: 'teams',
     loadComponent: () => import('./components/team-details/team-details.component').then(m => m.TeamDetailsComponent)
+  },
+  {
+    path: 'players',
+    loadComponent: () => import('./components/players/players.component').then(m => m.PlayersComponent)
+  },
+  {
+    path: 'players/:id',
+    loadComponent: () => import('./components/player-details/player-details.component').then(m => m.PlayerDetailsComponent)
   }
 ];
