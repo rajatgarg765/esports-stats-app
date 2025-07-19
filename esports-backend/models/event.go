@@ -13,5 +13,5 @@ type Event struct {
     WinnerTeamID  uint    `json:"winnerTeamId"`
     WinnerTeam  Team      `gorm:"foreignKey:WinnerTeamID"`
     Description string    `json:"description"`
-    ImageURL    string    `json:"imageUrl"` // Add this line
+    ImageURL    string    `json:"imageUrl"` // ADDED: Field for event banner/card image
 }
