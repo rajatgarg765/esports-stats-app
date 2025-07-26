@@ -80,8 +80,8 @@ func ListPopularTeams(c *gin.Context) {
 			Name:        team.Name,
 			Region:      team.Region,
 			Ranking:     team.Ranking,
-			LogoURL:     "http://example.com/teamlogo.jpg", // Placeholder
-			Description: "A competitive esports team.",      // Placeholder
+			LogoURL:     team.LogoURL, // Placeholder
+			Description: team.Description,      // Placeholder
 		})
 	}
 

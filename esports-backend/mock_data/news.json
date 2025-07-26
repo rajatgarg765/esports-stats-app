@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Thsse Rise of Mobile Esports",
+    "description": "Mobile gaming has exploded in popularity, with titles like Arena of Valor and PUBG Mobile leading the charge. Tournaments are attracting massive audiences and prize pools.",
+    "img": "https://placehold.co/200x100?text=Event+2"
+  },
+  {
+    "id": "2",
+    "title": "Esports in Education",
+    "description": "Colleges and universities are increasingly offering esports programs and scholarships, recognizing the growing importance of competitive gaming in the academic world.",
+    "img": "https://placehold.co/200x100?text=Event+2"
+  },
+  {
+    "id": "3",
+    "title": "Patssch Notes: Major Changes to Game X",
+    "description": "The latest patch brings significant balance changes and new content, promising to shake up the meta.",
+    "img": "https://example.com/patch-notes.jpg"
+  }
+]

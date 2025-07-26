@@ -4,19 +4,191 @@
     "name": "Team Liquid",
     "region": "North America",
     "ranking": 3,
-    "logo_url": "https://placehold.co/100x100/ADD8E6/000000?text=TL",
+    "logo_url": "https://placehold.co/100x100?text=TL",
+    "description": "A prominent esports organization.",
+    "founded": "2000",
     "roster": [
       {
         "id": "p1",
         "name": "EliGE",
         "role": "Rifler",
-        "imageUrl": "https://images.unsplash.com/photo-1596708778469-87a151528657?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imageUrl": "https://placehold.co/100x100?text=Player",
         "stats": {
           "kills": 100,
           "deaths": 80,
           "assists": 30,
           "score": 85
         }
+      }
+    ],
+    "pastPerformances": []
+  },
+  {
+    "id": "t_alpha",
+    "name": "Team Alpha",
+    "region": "Americas",
+    "ranking": 1,
+    "logo_url": "https://placehold.co/100x100?text=Team+Alpha",
+    "description": "Top-ranked team in the Americas",
+    "founded": "2020",
+    "roster": [],
+    "pastPerformances": []
+  },
+  {
+    "id": "t_beta",
+    "name": "Team Beta",
+    "region": "Europe",
+    "ranking": 2,
+    "logo_url": "https://placehold.co/100x100?text=Team+Beta",
+    "description": "Champions of the European League",
+    "founded": "2019",
+    "roster": [],
+    "pastPerformances": []
+  },
+  {
+    "id": "t_gamma",
+    "name": "Team Gamma",
+    "region": "Asia",
+    "ranking": 3,
+    "logo_url": "https://placehold.co/100x100?text=Team+Gamma",
+    "description": "Dominant force in the Asian region",
+    "founded": "2018",
+    "roster": [],
+    "pastPerformances": []
+  },
+  {
+    "id": "t_delta",
+    "name": "Team Delta",
+    "region": "Oceania",
+    "ranking": 4,
+    "logo_url": "https://placehold.co/100x100?text=Team+Delta",
+    "description": "Rising stars from the Oceanic region",
+    "founded": "2021",
+    "roster": [],
+    "pastPerformances": []
+  },
+  {
+    "id": "t_epsilon",
+    "name": "Team Epsilon",
+    "region": "Global",
+    "ranking": 5,
+    "logo_url": "https://placehold.co/100x100?text=Team+Epsilon",
+    "description": "Fan-favorite team with a global following",
+    "founded": "2017",
+    "roster": [],
+    "pastPerformances": []
+  },
+  {
+    "id": "t_zeta",
+    "name": "Team Zeta",
+    "region": "Global",
+    "ranking": 6,
+    "logo_url": "https://placehold.co/100x100?text=Team+Zeta",
+    "description": "Underdog team with a strong performance",
+    "founded": "2022",
+    "roster": [],
+    "pastPerformances": []
+  },
+  {
+    "id": "t_faze_clan",
+    "name": "FaZe Clan",
+    "region": "Europe",
+    "ranking": 0,
+    "logo_url": "https://img-cdn.hltv.org/teamlogo/SMhzsxzbkIrgqCOOKGRXlW.svg?ixlib=java-2.1.0&s=e6a9ce0345c7d703e5eaac14307f69aa",
+    "description": "Founded in 2010. A globally recognized esports team known for its achievements in various titles.",
+    "founded": "2010",
+    "roster": [
+      {
+        "id": "p_broky",
+        "name": "broky",
+        "role": "AWPer",
+        "imageUrl": "https://placehold.co/100x100?text=Broky",
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 245,
+          "score": 0,
+          "kd": 1.15,
+          "adr": 75.2,
+          "hs": 51.2
+        }
+      },
+      {
+        "id": "p_rain",
+        "name": "rain",
+        "role": "Rifler",
+        "imageUrl": "https://placehold.co/100x100?text=Rain",
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 198,
+          "score": 0,
+          "kd": 1.05,
+          "adr": 72.8,
+          "hs": 48.5
+        }
+      },
+      {
+        "id": "p_karrigan",
+        "name": "karrigan",
+        "role": "In-game Leader",
+        "imageUrl": "https://placehold.co/100x100?text=Karrigan",
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 312,
+          "score": 0,
+          "kd": 0.95,
+          "adr": 68.4,
+          "hs": 45.8
+        }
+      },
+      {
+        "id": "p_ropz",
+        "name": "ropz",
+        "role": "Rifler",
+        "imageUrl": "https://placehold.co/100x100?text=Ropz",
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 178,
+          "score": 0,
+          "kd": 1.18,
+          "adr": 78.9,
+          "hs": 53.1
+        }
+      },
+      {
+        "id": "p_frozen",
+        "name": "frozen",
+        "role": "Rifler",
+        "imageUrl": "https://placehold.co/100x100?text=Frozen",
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 201,
+          "score": 0,
+          "kd": 1.12,
+          "adr": 76.5,
+          "hs": 49.7
+        }
+      }
+    ],
+    "pastPerformances": [
+      {
+        "event": "IEM Katowice 2024",
+        "placement": "3rd-4th",
+        "prize": "$40,000"
+      },
+      {
+        "event": "BLAST Premier Spring Groups 2024",
+        "placement": "1st",
+        "prize": "$27,500"
+      },
+      {
+        "event": "CS2 Major Copenhagen 2024 Europe RMR",
+        "placement": "Qualified",
+        "prize": "-"
       }
     ]
   }

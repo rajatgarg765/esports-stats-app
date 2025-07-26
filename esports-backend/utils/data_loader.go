@@ -38,6 +38,30 @@ func LoadMockData() {
 		log.Fatalf("Failed to load matches.json: %v", err)
 	}
 	log.Println("Loaded matches data.")
+
+	// NEW: Load News Articles
+	if err := loadJSON(filepath.Join(mockDataDir, "news.json"), &mocks.MockNewsArticles); err != nil {
+		log.Fatalf("Failed to load news.json: %v", err)
+	}
+	log.Println("Loaded news data.")
+
+	// NEW: Load Homepage Hero Data
+	if err := loadJSON(filepath.Join(mockDataDir, "homepage_hero.json"), &mocks.MockHomepageHeroData); err != nil {
+		log.Fatalf("Failed to load homepage_hero.json: %v", err)
+	}
+	log.Println("Loaded homepage hero data.")
+
+	// NEW: Load Homepage Quick Stats
+	if err := loadJSON(filepath.Join(mockDataDir, "homepage_quick_stats.json"), &mocks.MockHomepageQuickStats); err != nil {
+		log.Fatalf("Failed to load homepage_quick_stats.json: %v", err)
+	}
+	log.Println("Loaded homepage quick stats data.")
+
+	// NEW: Load User Profile Image
+	if err := loadJSON(filepath.Join(mockDataDir, "user_profile.json"), &mocks.MockUserProfileImage); err != nil {
+		log.Fatalf("Failed to load user_profile.json: %v", err)
+	}
+	log.Println("Loaded user profile image data.")
 }
 
 // loadJSON is a generic helper function to read and unmarshal a JSON file

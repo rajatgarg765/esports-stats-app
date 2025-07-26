@@ -4,12 +4,228 @@
     "name": "EliGE",
     "team_id": "1",
     "role": "Rifler",
-    "imageUrl": "https://images.unsplash.com/photo-1628109961502-0e2ff135df2a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "imageUrl": "https://placehold.co/100x100?text=EliGE",
+    "joinedYear": "2015",
     "stats": {
       "kills": 100,
       "deaths": 80,
       "assists": 30,
-      "score": 85
-    }
+      "score": 85,
+      "avgDamage": 0,
+      "damageGrowth": 0,
+      "wins": 0,
+      "top10": 0,
+      "damage": 0,
+      "matchesPlayed": 0,
+      "winRate": 0
+    },
+    "achievements": []
+  },
+  {
+    "id": "p_sniperx",
+    "name": "Alex 'SniperX' Johnson",
+    "team_id": "t_alpha",
+    "role": "AWPer",
+    "imageUrl": "https://placehold.co/100x100?text=SniperX",
+    "joinedYear": "2021",
+    "stats": {
+      "avgDamage": 250,
+      "damageGrowth": 15,
+      "kills": 1250,
+      "wins": 50,
+      "top10": 200,
+      "assists": 0,
+      "score": 0,
+      "deaths": 0,
+      "damage": 0,
+      "matchesPlayed": 0,
+      "winRate": 0
+    },
+    "achievements": [
+      {
+        "title": "Regional Champion",
+        "year": "2022",
+        "icon": "Trophy"
+      },
+      {
+        "title": "National Finalist",
+        "year": "2023",
+        "icon": "Medal"
+      },
+      {
+        "title": "International Qualifier",
+        "year": "2024",
+        "icon": "Flag"
+      }
+    ]
+  },
+  {
+    "id": "p_ethan_ace_carter",
+    "name": "Ethan \"Ace\" Carter",
+    "team_id": "t_alpha",
+    "role": "Rifler",
+    "imageUrl": "https://placehold.co/100x100?text=Ace",
+    "joinedYear": "2022",
+    "stats": {
+      "kills": 250,
+      "assists": 120,
+      "damage": 15000,
+      "matchesPlayed": 50,
+      "winRate": 60,
+      "avgDamage": 0,
+      "damageGrowth": 0,
+      "wins": 0,
+      "top10": 0,
+      "score": 0,
+      "deaths": 0
+    },
+    "achievements": []
+  },
+  {
+    "id": "p_liam_blitz_harper",
+    "name": "Liam \"Blitz\" Harper",
+    "team_id": "t_beta",
+    "role": "Entry Fragger",
+    "imageUrl": "https://placehold.co/100x100?text=Blitz",
+    "joinedYear": "2023",
+    "stats": {
+      "kills": 220,
+      "assists": 110,
+      "damage": 14000,
+      "matchesPlayed": 48,
+      "winRate": 55,
+      "avgDamage": 0,
+      "damageGrowth": 0,
+      "wins": 0,
+      "top10": 0,
+      "score": 0,
+      "deaths": 0
+    },
+    "achievements": []
+  },
+  {
+    "id": "p_broky",
+    "name": "broky",
+    "team_id": "t_faze_clan",
+    "role": "AWPer",
+    "imageUrl": "https://placehold.co/100x100?text=Broky",
+    "joinedYear": "2020",
+    "stats": {
+      "kd": 1.15,
+      "adr": 75.2,
+      "hs": 51.2,
+      "assists": 245,
+      "kills": 0,
+      "deaths": 0,
+      "score": 0,
+      "avgDamage": 0,
+      "damageGrowth": 0,
+      "wins": 0,
+      "top10": 0,
+      "damage": 0,
+      "matchesPlayed": 0,
+      "winRate": 0
+    },
+    "achievements": []
+  },
+  {
+    "id": "p_rain",
+    "name": "rain",
+    "team_id": "t_faze_clan",
+    "role": "Rifler",
+    "imageUrl": "https://placehold.co/100x100?text=Rain",
+    "joinedYear": "2016",
+    "stats": {
+      "kd": 1.05,
+      "adr": 72.8,
+      "hs": 48.5,
+      "assists": 198,
+      "kills": 0,
+      "deaths": 0,
+      "score": 0,
+      "avgDamage": 0,
+      "damageGrowth": 0,
+      "wins": 0,
+      "top10": 0,
+      "damage": 0,
+      "matchesPlayed": 0,
+      "winRate": 0
+    },
+    "achievements": []
+  },
+  {
+    "id": "p_karrigan",
+    "name": "karrigan",
+    "team_id": "t_faze_clan",
+    "role": "In-game Leader",
+    "imageUrl": "https://placehold.co/100x100?text=Karrigan",
+    "joinedYear": "2022",
+    "stats": {
+      "kd": 0.95,
+      "adr": 68.4,
+      "hs": 45.8,
+      "assists": 312,
+      "kills": 0,
+      "deaths": 0,
+      "score": 0,
+      "avgDamage": 0,
+      "damageGrowth": 0,
+      "wins": 0,
+      "top10": 0,
+      "damage": 0,
+      "matchesPlayed": 0,
+      "winRate": 0
+    },
+    "achievements": []
+  },
+  {
+    "id": "p_ropz",
+    "name": "ropz",
+    "team_id": "t_faze_clan",
+    "role": "Rifler",
+    "imageUrl": "https://placehold.co/100x100?text=Ropz",
+    "joinedYear": "2021",
+    "stats": {
+      "kd": 1.18,
+      "adr": 78.9,
+      "hs": 53.1,
+      "assists": 178,
+      "kills": 0,
+      "deaths": 0,
+      "score": 0,
+      "avgDamage": 0,
+      "damageGrowth": 0,
+      "wins": 0,
+      "top10": 0,
+      "damage": 0,
+      "matchesPlayed": 0,
+      "winRate": 0
+    },
+    "achievements": []
+  },
+  {
+    "id": "p_frozen",
+    "name": "frozen",
+    "team_id": "t_faze_clan",
+    "role": "Rifler",
+    "imageUrl": "https://placehold.co/100x100?text=Frozen",
+    "joinedYear": "2023",
+    "stats": {
+      "kd": 1.12,
+      "adr": 76.5,
+      "hs": 49.7,
+      "assists": 201,
+      "kills": 0,
+      "deaths": 0,
+      "score": 0,
+      "avgDamage": 0,
+      "damageGrowth": 0,
+      "wins": 0,
+      "top10": 0,
+      "damage": 0,
+      "matchesPlayed": 0,
+      "winRate": 0
+    },
+    "achievements": []
   }
 ]

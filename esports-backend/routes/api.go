@@ -1,4 +1,4 @@
-// esports-backend/routes/api.go (Ensure it includes Match routes)
+// esports-backend/routes/api.go
 
 package routes
 
@@ -35,5 +35,17 @@ func SetupAPIRoutes(router *gin.Engine, db *gorm.DB) {
 		// Match Routes
 		api.GET("/matches", handlers.GetMatches)
 		api.GET("/matches/:id", handlers.GetMatchByID)
+
+		// NEW: News API
+		api.GET("/news", handlers.GetNewsArticles)
+
+		// NEW: Homepage Hero Section Data API
+		api.GET("/homepage/hero", handlers.GetHomepageHeroData)
+
+		// NEW: Homepage Quick Stats API
+		api.GET("/stats/homepage", handlers.GetHomepageQuickStats)
+
+		// NEW: User Profile Image API
+		api.GET("/user/profile", handlers.GetUserProfileImage)
 	}
 }
